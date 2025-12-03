@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Horizon | Official Band Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">NEON HORIZON</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#merch">Store</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <h1>THE FUTURE OF SOUND</h1>
+            <p>Live in Concert across India</p>
+            <button onclick="scrollToTour()">See Tour Dates</button>
+        </div>
+    </header>
+
+    <section id="music" class="container">
+        <h2>Latest Tracks</h2>
+        <div class="music-player">
+            <div class="track">
+                <h3>1. Midnight in Mumbai</h3>
+                <audio controls>
+                    <source src="song1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="track">
+                <h3>2. Cyber Heartbeat</h3>
+                <audio controls>
+                    <source src="song2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <section id="tour" class="container">
+        <h2>Upcoming Tour Dates</h2>
+        <table class="tour-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>City</th>
+                    <th>Venue</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Oct 15</td>
+                    <td>Mumbai</td>
+                    <td>Wankhede Grounds</td>
+                    <td><button class="ticket-btn" onclick="buyTicket('Mumbai')">Buy (₹1500)</button></td>
+                </tr>
+                <tr>
+                    <td>Oct 22</td>
+                    <td>Bengaluru</td>
+                    <td>Palace Grounds</td>
+                    <td><button class="ticket-btn" onclick="buyTicket('Bengaluru')">Buy (₹1500)</button></td>
+                </tr>
+                <tr>
+                    <td>Nov 05</td>
+                    <td>New Delhi</td>
+                    <td>JLN Stadium</td>
+                    <td><button class="ticket-btn" onclick="buyTicket('Delhi')">Buy (₹1800)</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="merch" class="container">
+        <h2>Official Merchandise</h2>
+        <div class="merch-grid">
+            <div class="merch-item">
+                <img src="https://placehold.co/300x300/1a1a1a/FFF?text=Band+T-Shirt" alt="T-Shirt">
+                <h3>Neon Tour Tee</h3>
+                <p class="price">₹ 899.00</p>
+                <button class="shop-btn" onclick="addToCart('Neon Tour Tee', 899)">Add to Cart</button>
+            </div>
+            <div class="merch-item">
+                <img src="https://placehold.co/300x300/1a1a1a/FFF?text=Vinyl+LP" alt="Vinyl">
+                <h3>'Eclipse' Vinyl LP</h3>
+                <p class="price">₹ 1,499.00</p>
+                <button class="shop-btn" onclick="addToCart('Eclipse Vinyl', 1499)">Add to Cart</button>
+            </div>
+            <div class="merch-item">
+                <img src="https://placehold.co/300x300/1a1a1a/FFF?text=Cap" alt="Cap">
+                <h3>Logo Snapback</h3>
+                <p class="price">₹ 499.00</p>
+                <button class="shop-btn" onclick="addToCart('Logo Snapback', 499)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="gallery" class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=400&q=80" alt="Concert 1">
+            <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&w=400&q=80" alt="Concert 2">
+            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=400&q=80" alt="Concert 3">
+            <img src="https://images.unsplash.com/photo-1459749411177-0473ef7161a9?auto=format&fit=crop&w=400&q=80" alt="Concert 4">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Neon Horizon. Rocking India.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
